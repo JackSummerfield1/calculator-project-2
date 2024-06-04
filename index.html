@@ -17,10 +17,10 @@
           <button class="btn dark-grey">x!</button>
           <button class="btn dark-grey">(</button>
           <button class="btn dark-grey">)</button>
-          <button class="btn grey">AC</button>
+          <button class="btn grey" onclick="clearDisplay()">AC</button>
           <button class="btn grey">±</button>
-          <button class="btn grey">%</button>
-          <button class="btn symbols">÷</button>
+          <button class="btn grey" onclick="percent()">%</button>
+          <button class="btn symbols" onclick="division()">÷</button>
         </div>
       </div>
       <div class="btns">
@@ -31,7 +31,7 @@
           <button class="btn">7</button>
           <button class="btn">8</button>
           <button class="btn">9</button>
-          <button class="btn symbols">x</button>
+          <button class="btn symbols" onclick="multiply()">x</button>
         </div>
       </div>
       <div class="btns">
@@ -42,7 +42,7 @@
           <button class="btn">4</button>
           <button class="btn">5</button>
           <button class="btn">6</button>
-          <button class="btn symbols">-</button>
+          <button class="btn symbols" onclick="subtract()">-</button>
         </div>
       </div>
       <div class="btns">
@@ -53,7 +53,7 @@
           <button class="btn">1</button>
           <button class="btn">2</button>
           <button class="btn">3</button>
-          <button class="btn symbols">+</button>
+          <button class="btn symbols" onclick="addition()">+</button>
         </div>
       </div>
       <div class="btns">
@@ -63,7 +63,7 @@
           <button class="btn dark-grey">π</button>
           <button class="btn" id="zero">0</button>
           <button class="btn">.</button>
-          <button class="btn symbols">=</button>
+          <button class="btn symbols" onclick="equal()">=</button>
         </div>
       </div>
     </div>
