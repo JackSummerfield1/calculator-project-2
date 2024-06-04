@@ -27,7 +27,8 @@ function addition() {
 }
 
 function equal() {
-    display.value = eval(display.value);
+    // Credit to W3Schools on how to use the replace method so that the true values of e and pi aren't dispalyed on the calculator: https://www.w3schools.com/jsref/jsref_replace.asp
+    display.value = eval(display.value.replace(/π/g, Math.PI).replace(/e/g, Math.E));
 }
 
 function percent() {
@@ -49,11 +50,11 @@ function factorial() {
 }
 
 function openBrace() {
-    
+    display.value += '('
 }
 
 function closedBrace() {
-    
+    display.value += ')'
 }
 
 function xPowTwo() {
@@ -64,42 +65,41 @@ function xPowThree() {
     display.value = Math.pow(parseFloat(display.value), 3).toString();
 }
 
-function xPowY() {
-    
-}
-
 function xSqrtTwo() {
-    
+    display.value = Math.sqrt(parseFloat(display.value), 2).toString();
 }
 
 function xSqrtThree() {
-    
-}
-
-function xSqrtY() {
-    
+    display.value = Math.sqrt(parseFloat(display.value), 3).toString();
 }
 
 function sin() {
-    
+    display.value = Math.sin(parseFloat(display.value * Math.PI / 180))
 }
 
 function cos() {
-    
+    display.value = Math.cos(parseFloat(display.value * Math.PI / 180))
 }
 
 function tan() {
-    
+    display.value = Math.tan(parseFloat(display.value * Math.PI / 180))
 }
 
 function log() {
-    
+    if (display.value > 0 ) {
+        display.value = Math.log10(parseFloat(display.value)).toString();
+    } else {
+        display.value = 'Error';
+    }
 }
 
+function inverse() {
+    display.value = 1/(display.value);
+}
 function e() {
-    
+    display.value += 'e'
 }
 
 function pi() {
-    
+    display.value += 'π'
 }

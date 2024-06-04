@@ -15,8 +15,8 @@
       <div class="btns">
         <div class="row">
           <button class="btn dark-grey">x!</button>
-          <button class="btn dark-grey">(</button>
-          <button class="btn dark-grey">)</button>
+          <button class="btn dark-grey" onclick="openBrace()">(</button>
+          <button class="btn dark-grey" onclick="closedBrace()">)</button>
           <button class="btn grey" onclick="clearDisplay()">AC</button>
           <button class="btn grey" onclick="plusMinus()">±</button>
           <button class="btn grey" onclick="percent()">%</button>
@@ -27,7 +27,7 @@
         <div class="row">
           <button class="btn dark-grey" onclick="xPowTwo()">x^2</button>
           <button class="btn dark-grey" onclick="xPowThree()">x^3</button>
-          <button class="btn dark-grey">log</button>
+          <button class="btn dark-grey" onclick="log()">log</button>
           <button class="btn">7</button>
           <button class="btn">8</button>
           <button class="btn">9</button>
@@ -36,8 +36,8 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey">√</button>
-          <button class="btn dark-grey">∛</button>
+          <button class="btn dark-grey" onclick="xSqrtTwo()">√</button>
+          <button class="btn dark-grey" onclick="xSqrtThree()">∛</button>
           <button class="btn dark-grey">ln</button>
           <button class="btn">4</button>
           <button class="btn">5</button>
@@ -47,9 +47,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey">sin</button>
-          <button class="btn dark-grey">cos</button>
-          <button class="btn dark-grey">tan</button>
+          <button class="btn dark-grey" onclick="sin()">sin</button>
+          <button class="btn dark-grey" onclick="cos()">cos</button>
+          <button class="btn dark-grey" onclick="tan()">tan</button>
           <button class="btn">1</button>
           <button class="btn">2</button>
           <button class="btn">3</button>
@@ -58,9 +58,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey">1/x</button>
-          <button class="btn dark-grey">e</button>
-          <button class="btn dark-grey">π</button>
+          <button class="btn dark-grey" onclick="inverse()">1/x</button>
+          <button class="btn dark-grey" onclick="e()">e</button>
+          <button class="btn dark-grey" onclick="pi()">π</button>
           <button class="btn" id="zero">0</button>
           <button class="btn">.</button>
           <button class="btn symbols" onclick="equal()">=</button>
