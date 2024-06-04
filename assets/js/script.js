@@ -1,7 +1,7 @@
 let display = document.getElementById('display');
 let btn = document.getElementsByClassName('btn');
 
-for (object of btn) {
+for (let object of btn) {
     object.addEventListener('click', function(e) {
         let btnValue = e.target.textContent;
         if (!isNaN(btnValue) || btnValue === '.') {
@@ -11,35 +11,37 @@ for (object of btn) {
 }
 
 function division() {
-
+    display.value += '/'
 }
 
 function multiply() {
-    
+    display.value += '*'
 }
 
 function subtract() {
-    
+    display.value += '-'
 }
 
 function addition() {
-    
+    display.value += '+'
 }
 
 function equal() {
-    
+    display.value = eval(display.value);
 }
 
 function percent() {
-    
+    if (display.value) {
+        display.value = (parseFloat(display.value) / 100).toString();
+    }
 }
 
 function plusMinus() {
     
 }
 
-function clear() {
-    
+function clearDisplay() {
+    display.value = '';
 }
 
 function factorial() {
