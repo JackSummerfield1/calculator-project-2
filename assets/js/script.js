@@ -37,7 +37,7 @@ function percent() {
 }
 
 function plusMinus() {
-    
+    display.value = display.value * (-1);
 }
 
 function clearDisplay() {
@@ -57,11 +57,11 @@ function closedBrace() {
 }
 
 function xPowTwo() {
-    
+    display.value = Math.pow(parseFloat(display.value), 2).toString();
 }
 
 function xPowThree() {
-    
+    display.value = Math.pow(parseFloat(display.value), 3).toString();
 }
 
 function xPowY() {
