@@ -26,6 +26,11 @@ function addition() {
     display.value += '+'
 }
 
+// Credit to chat.openai.com for assistance with fixing some of these, it helped me debug the closing brace sections
+/**
+ * This function allows for expressions to be entered into the display
+ * and it will calculate the exact answer for you
+ */
 function equal() {
     try {
         if (display.value.includes('log(')) {
@@ -122,12 +127,12 @@ function xPowThree() {
     display.value = Math.pow(parseFloat(display.value), 3).toString();
 }
 
-function xSqrtTwo() {
-    display.value = Math.sqrt(parseFloat(display.value), 2).toString();
+function xSqrt() {
+    display.value = Math.sqrt(parseFloat(display.value)).toString();
 }
 
-function xSqrtThree() {
-    display.value = Math.sqrt(parseFloat(display.value), 3).toString();
+function xCbrt() {
+    display.value = Math.cbrt(parseFloat(display.value)).toString();
 }
 
 function sin() {
