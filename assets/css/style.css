@@ -62,6 +62,10 @@ button.btn.red {
   background-color: #ff0000;
 }
 
+button.btn.green {
+    background-color: #007500;
+}
+
 #zero {
   width: 136px;
 }
