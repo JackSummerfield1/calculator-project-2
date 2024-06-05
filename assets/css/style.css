@@ -1,60 +1,60 @@
 /* Default styling for body */
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 .container {
-    flex-direction: column;
-    align-content: center;
-    background-color: #000000;
-    padding: 32px 64px;
-    border-radius: 32px;
-    margin-top: 64px;
+  flex-direction: column;
+  align-content: center;
+  background-color: #000000;
+  padding: 32px 64px;
+  border-radius: 32px;
+  margin-top: 64px;
 }
 
 .display input {
-    margin: 2px;
-    padding: 5px;
-    width: 484px;
-    height: 64px;
-    text-align: right;
-    color: #ffffff;
-    background-color: #000000;
-    border: none;
+  margin: 2px;
+  padding: 5px;
+  width: 484px;
+  height: 64px;
+  text-align: right;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
 }
 
 .btn {
-    margin: 2px;
-    padding: 5px;
-    width: 64px;
-    height: 64px;
-    background-color: #333333;
-    border: none;
-    border-radius: 32px;
-    color: #ffffff;
+  margin: 2px;
+  padding: 5px;
+  width: 64px;
+  height: 64px;
+  background-color: #333333;
+  border: none;
+  border-radius: 32px;
+  color: #ffffff;
 }
 
 button.btn.symbols {
-    background-color: #f0a33b;
+  background-color: #f0a33b;
 }
 
 button.btn.grey {
-    background-color: #a5a5a5;
+  background-color: #a5a5a5;
 }
 
 button.btn.dark-grey {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 button.btn.red {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
 
 #zero {
-    width: 136px;
+  width: 136px;
 }
