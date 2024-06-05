@@ -86,6 +86,21 @@ function equal() {
       } else {
         display.value = "Error";
       }
+    } else if (display.value.includes("ln(")) {
+      let start = display.value.indexOf("ln(") + 3;
+      let end = display.value.indexOf(")", start);
+
+      if (end !== -1) {
+        let num = parseFloat(display.value.substring(start, end));
+
+        if (num > 0) {
+          display.value = Math.log(num);
+        } else {
+          display.value = "Error";
+        }
+      } else {
+        display.value = "Error";
+      }
     } else {
       display.value = eval(
         display.value.replace(/π/g, Math.PI).replace(/e/g, Math.E)
@@ -152,6 +167,10 @@ function tan() {
 
 function log() {
   display.value += "log(";
+}
+
+function ln() {
+  display.value += "ln(";
 }
 
 function inverse() {
