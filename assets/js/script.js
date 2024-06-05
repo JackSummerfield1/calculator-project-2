@@ -107,8 +107,8 @@ function clearDisplay() {
     display.value = '';
 }
 
-function factorial() {
-    
+function deleteChar() {
+    display.value = display.value.slice(0, -1);
 }
 
 function openBrace() {
@@ -149,11 +149,6 @@ function tan() {
 
 function log() {
     display.value += 'log('
-    // if (display.value > 0 ) {
-    //     display.value = Math.log10(parseFloat(display.value)).toString();
-    // } else {
-    //     display.value = 'Error';
-    // }
 }
 
 function inverse() {
