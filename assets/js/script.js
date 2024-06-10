@@ -151,6 +151,21 @@ function cos() {
   }
 }
 
+function tan() {
+  let start = display.value.indexOf("tan(") + 4;
+  let end = display.value.indexOf(")", start);
+
+  if (end !== -1) {
+    let num = parseFloat(display.value.substring(start, end));
+    display.value =
+      num % 90 === 0 && (num / 90 - 1) % 2 === 0
+        ? "Error"
+        : Math.tan(eval((num * Math.PI) / 180));
+  } else {
+    display.value = "Error";
+  }
+}
+
 function percent() {
   if (display.value) {
     display.value = (parseFloat(display.value) / 100).toString();
