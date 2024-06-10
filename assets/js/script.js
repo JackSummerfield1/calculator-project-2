@@ -111,7 +111,7 @@ function addition() {
   display.value += "+";
 }
 
-function log() {
+function logCalc() {
   let start = display.value.indexOf("log(") + 4; // Indicates the initial index of the number in question
   let end = display.value.indexOf(")", start); // Indicates the final index of the number in question
 
@@ -125,7 +125,7 @@ function log() {
   }
 }
 
-function sin() {
+function sinCalc() {
   let start = display.value.indexOf("sin(") + 4;
   let end = display.value.indexOf(")", start);
 
@@ -138,7 +138,7 @@ function sin() {
   }
 }
 
-function cos() {
+function cosCalc() {
   let start = display.value.indexOf("cos(") + 4;
   let end = display.value.indexOf(")", start);
 
@@ -151,7 +151,7 @@ function cos() {
   }
 }
 
-function tan() {
+function tanCalc() {
   let start = display.value.indexOf("tan(") + 4;
   let end = display.value.indexOf(")", start);
 
@@ -166,7 +166,7 @@ function tan() {
   }
 }
 
-function ln() {
+function lnCalc() {
   let start = display.value.indexOf("ln(") + 3;
   let end = display.value.indexOf(")", start);
 
