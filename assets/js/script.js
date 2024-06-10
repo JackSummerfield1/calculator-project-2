@@ -10,22 +10,6 @@ for (let object of btn) {
   });
 }
 
-function division() {
-  display.value += "/";
-}
-
-function multiply() {
-  display.value += "*";
-}
-
-function subtract() {
-  display.value += "-";
-}
-
-function addition() {
-  display.value += "+";
-}
-
 // Credit to chat.openai.com for assistance with fixing some of these, it helped me debug the closing brace sections
 /**
  * This function allows for expressions to be entered into the display
@@ -109,6 +93,22 @@ function equal() {
   } catch (e) {
     display.value = "Error";
   }
+}
+
+function division() {
+  display.value += "/";
+}
+
+function multiply() {
+  display.value += "*";
+}
+
+function subtract() {
+  display.value += "-";
+}
+
+function addition() {
+  display.value += "+";
 }
 
 function percent() {
