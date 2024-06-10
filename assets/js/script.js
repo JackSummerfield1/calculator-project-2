@@ -111,6 +111,20 @@ function addition() {
   display.value += "+";
 }
 
+function log() {
+  let start = display.value.indexOf("log(") + 4; // Indicates the initial index of the number in question
+  let end = display.value.indexOf(")", start); // Indicates the final index of the number in question
+
+  if (end !== -1) {
+    // Ensures there must be a closing brace after number in question is entered, otherwise function doesn't work
+    let num = eval(display.value.substring(start, end));
+
+    display.value = (num > 0) ? Math.log10(num) : 'Error' // Use of a ternary operator, function is then more readable
+  } else {
+    display.value = "Error";
+  }
+}
+
 function percent() {
   if (display.value) {
     display.value = (parseFloat(display.value) / 100).toString();
