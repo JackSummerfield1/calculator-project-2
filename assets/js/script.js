@@ -221,15 +221,15 @@ function xCbrt() {
 }
 
 function sin() {
-  display.value += "sin("; //Math.sin(parseFloat(display.value * Math.PI / 180))
+  display.value += "sin(";
 }
 
 function cos() {
-  display.value = "cos("; //Math.cos(parseFloat(display.value * Math.PI / 180))
+  display.value = "cos(";
 }
 
 function tan() {
-  display.value = "tan("; //Math.tan(parseFloat(display.value * Math.PI / 180))
+  display.value = "tan(";
 }
 
 function log() {
