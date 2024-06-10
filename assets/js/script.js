@@ -213,3 +213,7 @@ function e() {
 function pi() {
   display.value += "π";
 }
+
+function storeValue() {}
+
+function recallValue() {}
