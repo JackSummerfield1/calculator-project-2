@@ -166,6 +166,18 @@ function tan() {
   }
 }
 
+function ln() {
+  let start = display.value.indexOf("ln(") + 3;
+  let end = display.value.indexOf(")", start);
+
+  if (end !== -1) {
+    let num = eval(display.value.substring(start, end));
+    display.value = num > 0 ? Math.log(num) : "Error";
+  } else {
+    display.value = "Error";
+  }
+}
+
 function percent() {
   if (display.value) {
     display.value = (parseFloat(display.value) / 100).toString();
