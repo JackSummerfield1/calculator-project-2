@@ -48,15 +48,14 @@ function equal() {
       case 'ln':
         return lnCalc();
       break;
-      case default: {
+      default: {
         display.value = eval(
           display.value.replace(/π/g, Math.PI).replace(/e/g, Math.E)
         ); // Credit to W3Schools on how to use the replace method so that the true values of e and pi aren't dispalyed on the calculator: https://www.w3schools.com/jsref/jsref_replace.asp
-      }
-  } catch (e) {
-    display.value = "Error";
-  }
-}
+      }}
+} catch (e) {
+  display.value = "Error";
+}}
 
 function division() {
   display.value += "/";
