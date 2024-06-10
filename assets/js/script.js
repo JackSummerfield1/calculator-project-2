@@ -119,7 +119,20 @@ function log() {
     // Ensures there must be a closing brace after number in question is entered, otherwise function doesn't work
     let num = eval(display.value.substring(start, end));
 
-    display.value = (num > 0) ? Math.log10(num) : 'Error' // Use of a ternary operator, function is then more readable
+    display.value = num > 0 ? Math.log10(num) : "Error"; // Use of a ternary operator, function is then more readable
+  } else {
+    display.value = "Error";
+  }
+}
+
+function sin() {
+  let start = display.value.indexOf("sin(") + 4;
+  let end = display.value.indexOf(")", start);
+
+  if (end !== -1) {
+    let num = eval(display.value.substring(start, end));
+    // No limitations for the sinx function as x can be any number
+    display.value = Math.sin(parseFloat((num * Math.PI) / 180));
   } else {
     display.value = "Error";
   }
