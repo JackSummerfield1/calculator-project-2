@@ -1,5 +1,6 @@
 let display = document.getElementById("display");
 let btn = document.getElementsByClassName("btn");
+let storedValue = null;
 
 for (let object of btn) {
   object.addEventListener("click", function (e) {
@@ -214,6 +215,12 @@ function pi() {
   display.value += "π";
 }
 
-function storeValue() {}
+function storeValue() {
+  let currentValue = display.value;
+  storedValue = currentValue;
+  alert(`You successfully stored this value: ${display.value}`);
+}
 
-function recallValue() {}
+function recallValue() {
+  display.value += storedValue;
+}
