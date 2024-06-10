@@ -94,7 +94,7 @@ function sinCalc() {
   if (end !== -1) {
     let num = eval(display.value.substring(start, end));
     // No limitations for the sinx function as x can be any number
-    display.value = Math.sin(parseFloat((num * Math.PI) / 180));
+    display.value = Math.sin(((num * Math.PI) / 180));
   } else {
     display.value = "Error";
   }
@@ -105,9 +105,9 @@ function cosCalc() {
   let end = display.value.indexOf(")", start);
 
   if (end !== -1) {
-    let num = parseFloat(display.value.substring(start, end));
+    let num = eval(display.value.substring(start, end));
     // No limitations for the cosx function as x can be any number
-    display.value = Math.cos(eval((num * Math.PI) / 180));
+    display.value = Math.cos(((num * Math.PI) / 180));
   } else {
     display.value = "Error";
   }
@@ -118,11 +118,11 @@ function tanCalc() {
   let end = display.value.indexOf(")", start);
 
   if (end !== -1) {
-    let num = parseFloat(display.value.substring(start, end));
+    let num = eval(display.value.substring(start, end));
     display.value =
       num % 90 === 0 && (num / 90 - 1) % 2 === 0
         ? "Error"
-        : Math.tan(eval((num * Math.PI) / 180));
+        : Math.tan(((num * Math.PI) / 180));
   } else {
     display.value = "Error";
   }
