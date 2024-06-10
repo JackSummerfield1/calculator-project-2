@@ -138,6 +138,19 @@ function sin() {
   }
 }
 
+function cos() {
+  let start = display.value.indexOf("cos(") + 4;
+  let end = display.value.indexOf(")", start);
+
+  if (end !== -1) {
+    let num = parseFloat(display.value.substring(start, end));
+    // No limitations for the cosx function as x can be any number
+    display.value = Math.cos(eval((num * Math.PI) / 180));
+  } else {
+    display.value = "Error";
+  }
+}
+
 function percent() {
   if (display.value) {
     display.value = (parseFloat(display.value) / 100).toString();
