@@ -6,6 +6,7 @@
     <title>Sci Calculator</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/3f8b1dbd27.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1>SCIENTIFIC CALCULATOR</h1>
@@ -16,8 +17,8 @@
       <div class="btns">
         <div class="row">
           <button class="btn red" onclick="deleteChar()">DEL</button>
-          <button class="btn dark-grey" onclick="openBrace()">(</button>
-          <button class="btn dark-grey" onclick="closedBrace()">)</button>
+          <button class="btn dark-grey hide" onclick="openBrace()">(</button>
+          <button class="btn dark-grey hide" onclick="closedBrace()">)</button>
           <button class="btn grey" onclick="clearDisplay()">AC</button>
           <button class="btn grey" onclick="plusMinus()">±</button>
           <button class="btn grey" onclick="percent()">%</button>
@@ -26,9 +27,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey" onclick="xPowTwo()">x²</button>
-          <button class="btn dark-grey" onclick="xPowThree()">x³</button>
-          <button class="btn dark-grey" onclick="log()">log</button>
+          <button class="btn dark-grey hide" onclick="xPowTwo()">x²</button>
+          <button class="btn dark-grey hide" onclick="xPowThree()">x³</button>
+          <button class="btn dark-grey hide" onclick="log()">log</button>
           <button class="btn">7</button>
           <button class="btn">8</button>
           <button class="btn">9</button>
@@ -37,9 +38,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey" onclick="xSqrt()">√</button>
-          <button class="btn dark-grey" onclick="xCbrt()">∛</button>
-          <button class="btn dark-grey" onclick="ln()">ln</button>
+          <button class="btn dark-grey hide" onclick="xSqrt()">√</button>
+          <button class="btn dark-grey hide" onclick="xCbrt()">∛</button>
+          <button class="btn dark-grey hide" onclick="ln()">ln</button>
           <button class="btn">4</button>
           <button class="btn">5</button>
           <button class="btn">6</button>
@@ -48,9 +49,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey" onclick="sin()">sin</button>
-          <button class="btn dark-grey" onclick="cos()">cos</button>
-          <button class="btn dark-grey" onclick="tan()">tan</button>
+          <button class="btn dark-grey hide" onclick="sin()">sin</button>
+          <button class="btn dark-grey hide" onclick="cos()">cos</button>
+          <button class="btn dark-grey hide" onclick="tan()">tan</button>
           <button class="btn">1</button>
           <button class="btn">2</button>
           <button class="btn">3</button>
@@ -59,9 +60,9 @@
       </div>
       <div class="btns">
         <div class="row">
-          <button class="btn dark-grey" onclick="inverse()">1/x</button>
-          <button class="btn dark-grey" onclick="e()">e</button>
-          <button class="btn dark-grey" onclick="pi()">π</button>
+          <button class="btn dark-grey hide" onclick="inverse()">1/x</button>
+          <button class="btn dark-grey hide" onclick="e()">e</button>
+          <button class="btn dark-grey hide" onclick="pi()">π</button>
           <button class="btn" id="zero">0</button>
           <button class="btn">.</button>
           <button class="btn symbols" onclick="equal()">=</button>
@@ -73,6 +74,11 @@
           <button class="btn green" onclick="recallValue()">REC</button>
         </div>
       </div>
+      <div class="btns">
+        <div class="row">
+            <button class="btn expand"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
     </div>
     <script src="assets/js/script.js"></script>
   </body>

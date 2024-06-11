@@ -21,15 +21,15 @@ h1 {
   padding: 32px;
   border-radius: 32px;
   margin: 64px auto;
-  width: 700px;
+  width: 52vw;
 }
 
 .display input {
   margin: 2px;
   padding: 5px;
-  width: 484px;
+  width: auto;
   height: 64px;
-  text-align: right;
+  text-align: center;
   color: #ffffff;
   background-color: #000000;
   border: none;
@@ -66,6 +66,29 @@ button.btn.green {
     background-color: #007500;
 }
 
+button.btn.expand {
+  display: none;
+}
+
 #zero {
   width: 136px;
+}
+
+@media only screen and (max-width: 996px) {
+  button.btn.hide {
+    display: none;
+  }
+
+  button.btn.red {
+    position: absolute;
+    top: 616px;
+  }
+
+  button.btn.expand {
+    display: block;
+    position: absolute;
+    top: 615px;
+    margin-left: 76px;
+    background-color: rgb(0, 102, 255);
+  }
 }
