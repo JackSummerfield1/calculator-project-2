@@ -224,3 +224,16 @@ function storeValue() {
 function recallValue() {
   display.value += storedValue;
 }
+
+// Credit to https://www.shecodes.io/athena/9423-change-the-class-name-of-an-html-element-with-javascript for assistance on changing class name when a button is clicked
+
+function changeClass() {
+  let elements = document.querySelectorAll('.hide, .visible');
+  for (let element of elements) {
+    if (element.classList.contains('hide')) {
+      element.classList.replace('hide', 'visible')
+    } else if (element.classList.contains('visible')) {
+      element.classList.replace('visible', 'hide')
+    }
+  }
+}

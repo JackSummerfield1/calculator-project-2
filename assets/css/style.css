@@ -91,4 +91,75 @@ button.btn.expand {
     margin-left: 76px;
     background-color: rgb(0, 102, 255);
   }
+
+  .visible {
+    position: absolute;
+    top: 684px;
+  }
+
+  .o-brace {}
+
+  .c-brace {
+    margin-left: 73px;
+  }
+
+  .x-pow-two {
+    margin-left: 146px;
+  }
+
+  .x-pow-three {
+    margin-left: 219px;
+  }
+
+  button.visible.log {
+    top: 752px;
+  }
+
+  button.visible.x-sqrt {
+    top: 752px;
+    margin-left: 73px;
+  }
+
+  button.visible.x-cbrt {
+    top: 752px;
+    margin-left: 146px;
+  }
+
+  button.visible.ln {
+    top: 752px;
+    margin-left: 219px;
+  }
+
+  button.visible.sin {
+    top: 820px;
+  }
+
+  button.visible.cos {
+    top: 820px;
+    margin-left: 73px;
+  }
+
+  button.visible.tan {
+    top: 820px;
+    margin-left: 146px;
+  }
+
+  button.visible.inv {
+    top: 820px;
+    margin-left: 219px;
+  }
+
+  button.visible.sym-e {
+    top: 888px;
+    margin-left: 73px;
+  }
+
+  button.visible.sym-pi {
+    top: 888px;
+    margin-left: 146px;
+  }
+
+  .container {
+    padding-bottom: 320px;
+  }
 }
