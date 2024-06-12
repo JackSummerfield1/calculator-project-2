@@ -2,14 +2,16 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:#a5a5a5;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url("../images/maths-transparent.png");
+  background-size: cover;
+  background-position: center top;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 64px;
-    margin-bottom: 64px;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .container {
@@ -21,6 +23,7 @@ h1 {
   background-color: #000000;
   padding: 32px;
   border-radius: 32px;
+  border: 2px solid #fff;
   margin: 64px auto;
   width: 52vw;
 }
@@ -69,7 +72,7 @@ button.btn.red {
 }
 
 button.btn.green {
-    background-color: #007500;
+  background-color: #007500;
 }
 
 button.btn.expand {
@@ -104,7 +107,8 @@ button.btn.expand {
     top: 684px;
   }
 
-  .o-brace {}
+  .o-brace {
+  }
 
   .c-brace {
     margin-left: 73px;

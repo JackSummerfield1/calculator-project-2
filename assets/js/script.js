@@ -19,44 +19,46 @@ for (let object of btn) {
 function equal() {
   try {
     let exp = display.value;
-    let fName = '';
+    let fName = "";
 
-    if (exp.includes('log(')) {
-      fName = 'log';
-    } else if (exp.includes('sin(')) {
-      fName = 'sin';
-    } else if (exp.includes('cos(')) {
-      fName = 'cos';
-    } else if (exp.includes('tan(')) {
-      fName = 'tan';
-    } else if (exp.includes('ln(')) {
-      fName = 'ln';
+    if (exp.includes("log(")) {
+      fName = "log";
+    } else if (exp.includes("sin(")) {
+      fName = "sin";
+    } else if (exp.includes("cos(")) {
+      fName = "cos";
+    } else if (exp.includes("tan(")) {
+      fName = "tan";
+    } else if (exp.includes("ln(")) {
+      fName = "ln";
     }
 
-    switch(fName) {
-      case 'log':
+    switch (fName) {
+      case "log":
         return logCalc();
-      break;
-      case 'sin':
+        break;
+      case "sin":
         return sinCalc();
-      break;
-      case 'cos':
+        break;
+      case "cos":
         return cosCalc();
-      break;
-      case 'tan':
+        break;
+      case "tan":
         return tanCalc();
-      break;
-      case 'ln':
+        break;
+      case "ln":
         return lnCalc();
-      break;
+        break;
       default: {
         display.value = eval(
           display.value.replace(/π/g, Math.PI).replace(/e/g, Math.E)
         ); // Credit to W3Schools on how to use the replace method so that the true values of e and pi aren't dispalyed on the calculator: https://www.w3schools.com/jsref/jsref_replace.asp
-      }}
-} catch (e) {
-  display.value = "Error";
-}}
+      }
+    }
+  } catch (e) {
+    display.value = "Error";
+  }
+}
 
 function division() {
   display.value += "/";
@@ -105,7 +107,7 @@ function sinCalc() {
   if (end !== -1) {
     let num = eval(display.value.substring(start, end));
     // No limitations for the sinx function as x can be any number
-    display.value = Math.sin(((num * Math.PI) / 180));
+    display.value = Math.sin((num * Math.PI) / 180);
   } else {
     display.value = "Error";
   }
@@ -123,7 +125,7 @@ function cosCalc() {
   if (end !== -1) {
     let num = eval(display.value.substring(start, end));
     // No limitations for the cosx function as x can be any number
-    display.value = Math.cos(((num * Math.PI) / 180));
+    display.value = Math.cos((num * Math.PI) / 180);
   } else {
     display.value = "Error";
   }
@@ -143,7 +145,7 @@ function tanCalc() {
     display.value =
       num % 90 === 0 && (num / 90 - 1) % 2 === 0
         ? "Error"
-        : Math.tan(((num * Math.PI) / 180));
+        : Math.tan((num * Math.PI) / 180);
   } else {
     display.value = "Error";
   }
@@ -265,12 +267,12 @@ function recallValue() {
  * screens, allows the app to be more responsive
  */
 function changeClass() {
-  let elements = document.querySelectorAll('.hide, .visible');
+  let elements = document.querySelectorAll(".hide, .visible");
   for (let element of elements) {
-    if (element.classList.contains('hide')) {
-      element.classList.replace('hide', 'visible')
-    } else if (element.classList.contains('visible')) {
-      element.classList.replace('visible', 'hide')
+    if (element.classList.contains("hide")) {
+      element.classList.replace("hide", "visible");
+    } else if (element.classList.contains("visible")) {
+      element.classList.replace("visible", "hide");
     }
   }
 }
