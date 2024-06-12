@@ -74,6 +74,11 @@ function addition() {
   display.value += "+";
 }
 
+/**
+ * This function allows for an equation to be calculated
+ * within the brackets of the log function ie. log(7+3)
+ * and completes the log function, including its limitations
+ */
 function logCalc() {
   let start = display.value.indexOf("log(") + 4; // Indicates the initial index of the number in question
   let end = display.value.indexOf(")", start); // Indicates the final index of the number in question
@@ -88,6 +93,11 @@ function logCalc() {
   }
 }
 
+/**
+ * This function allows for an equation to be calculated
+ * within the brackets of the sin function ie. sin(7+3)
+ * and completes the sin function
+ */
 function sinCalc() {
   let start = display.value.indexOf("sin(") + 4;
   let end = display.value.indexOf(")", start);
@@ -101,6 +111,11 @@ function sinCalc() {
   }
 }
 
+/**
+ * This function allows for an equation to be calculated
+ * within the brackets of the cos function ie. cos(7+3)
+ * and completes the cos function
+ */
 function cosCalc() {
   let start = display.value.indexOf("cos(") + 4;
   let end = display.value.indexOf(")", start);
@@ -114,6 +129,11 @@ function cosCalc() {
   }
 }
 
+/**
+ * This function allows for an equation to be calculated
+ * within the brackets of the tan function ie. tan(7+3)
+ * and completes the tan function, including its limitations
+ */
 function tanCalc() {
   let start = display.value.indexOf("tan(") + 4;
   let end = display.value.indexOf(")", start);
@@ -129,6 +149,11 @@ function tanCalc() {
   }
 }
 
+/**
+ * This function allows for an equation to be calculated
+ * within the brackets of the ln function ie. ln(7+3)
+ * and completes the ln function, including its limitations
+ */
 function lnCalc() {
   let start = display.value.indexOf("ln(") + 3;
   let end = display.value.indexOf(")", start);
@@ -215,18 +240,30 @@ function pi() {
   display.value += "π";
 }
 
+/**
+ * This function allows for current value displayed on the calc screen
+ * to be stored as memory if needed to be used later
+ */
 function storeValue() {
   let currentValue = display.value;
   storedValue = currentValue;
   alert(`You successfully stored this value: ${display.value}`);
 }
 
+/**
+ * This function allows for a previous value that has been stored
+ * to be recalled onto the calcs display
+ */
 function recallValue() {
   display.value += storedValue;
 }
 
 // Credit to https://www.shecodes.io/athena/9423-change-the-class-name-of-an-html-element-with-javascript for assistance on changing class name when a button is clicked
 
+/**
+ * This function acts as a dropdown for the sci functions on smaller
+ * screens, allows the app to be more responsive
+ */
 function changeClass() {
   let elements = document.querySelectorAll('.hide, .visible');
   for (let element of elements) {
