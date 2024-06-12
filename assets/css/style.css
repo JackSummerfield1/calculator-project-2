@@ -74,6 +74,7 @@ button.btn.expand {
   width: 136px;
 }
 
+/* Media query for tablets */
 @media only screen and (max-width: 996px) {
   button.btn.hide {
     display: none;
@@ -161,5 +162,100 @@ button.btn.expand {
 
   .container {
     padding-bottom: 320px;
+  }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 548px) {
+  h1 {
+    font-size: 1em;
+  }
+  .container {
+    width: 70vw;
+  }
+  .btn {
+    width: 48px;
+    height: 48px;
+  }
+  #zero {
+    width: 102px;
+  }
+  button.btn.red {
+    position: absolute;
+    top: 517px;
+  }
+  button.btn.expand {
+    top: 517px;
+    margin-left: 60px;
+  }
+  .o-brace {
+    top: 570px;
+  }
+
+  .c-brace {
+    top: 570px;
+    margin-left: 57px;
+  }
+
+  .x-pow-two {
+    top: 570px;
+    margin-left: 114px;
+  }
+
+  .x-pow-three {
+    top: 570px;
+    margin-left: 171px;
+  }
+
+  button.visible.log {
+    top: 623px;
+  }
+
+  button.visible.x-sqrt {
+    top: 623px;
+    margin-left: 57px;
+  }
+
+  button.visible.x-cbrt {
+    top: 623px;
+    margin-left: 114px;
+  }
+
+  button.visible.ln {
+    top: 623px;
+    margin-left: 171px;
+  }
+
+  button.visible.sin {
+    top: 676px;
+  }
+
+  button.visible.cos {
+    top: 676px;
+    margin-left: 57px;
+  }
+
+  button.visible.tan {
+    top: 676px;
+    margin-left: 114px;
+  }
+
+  button.visible.inv {
+    top: 676px;
+    margin-left: 171px;
+  }
+
+  button.visible.sym-e {
+    top: 729px;
+    margin-left: 57px;
+  }
+
+  button.visible.sym-pi {
+    top: 729px;
+    margin-left: 114px;
+  }
+
+  .container {
+    padding-bottom: 250px;
   }
 }
