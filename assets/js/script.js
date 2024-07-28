@@ -185,76 +185,135 @@ function addition() {
   display.value += "+";
 }
 
+/**
+ * This function completes the percentage of a number ie. dividing it by 100
+ */
 function percent() {
   if (display.value) {
     display.value = (parseFloat(display.value) / 100).toString();
   }
 }
 
+/**
+ * This function inverts the numbers positivity, ie. 1 -> -1
+ */
 function plusMinus() {
   display.value = display.value * -1;
 }
 
+/**
+ * This function clears the display completely
+ */
 function clearDisplay() {
   display.value = "";
 }
 
+/**
+ * This function deletes the final character on the display
+ */
 function deleteChar() {
   display.value = display.value.slice(0, -1);
 }
 
+/**
+ * This function inserts an open brace to the display
+ */
 function openBrace() {
   display.value += "(";
 }
 
+/**
+ * This function inserts a closed brace to the display
+ */
 function closedBrace() {
   display.value += ")";
 }
 
+/**
+ * This function squares the value in the display
+ */
 function xPowTwo() {
   display.value = Math.pow(parseFloat(display.value), 2).toString();
 }
 
+/**
+ * This function cubes the value in the display
+ */
 function xPowThree() {
   display.value = Math.pow(parseFloat(display.value), 3).toString();
 }
 
+/**
+ * This function completes the square root of the value in the display
+ */
 function xSqrt() {
   display.value = Math.sqrt(parseFloat(display.value)).toString();
 }
 
+/**
+ * This function completes the cube root of the value in the display
+ */
 function xCbrt() {
   display.value = Math.cbrt(parseFloat(display.value)).toString();
 }
 
+/**
+ * This adds sin( to the terminal, which can then be recognised by the equal func
+ * above to then complete the trig sine function
+ */
 function sin() {
   display.value += "sin(";
 }
 
+/**
+ * This adds cos( to the terminal, which can then be recognised by the equal func
+ * above to then complete the trig cosine function
+ */
 function cos() {
   display.value = "cos(";
 }
 
+/**
+ * This adds tan( to the terminal, which can then be recognised by the equal func
+ * above to then complete the trig tangent function
+ */
 function tan() {
   display.value = "tan(";
 }
 
+/**
+ * This adds log( to the terminal, which can then be recognised by the equal func
+ * above to then complete the mathematical logarithmic function
+ */
 function log() {
   display.value += "log(";
 }
 
+/**
+ * This adds ln( to the terminal, which can then be recognised by the equal func
+ * above to then complete the natural logarithmic function
+ */
 function ln() {
   display.value += "ln(";
 }
 
+/**
+ * This completes the inverse of a number, ie. x -> 1 / x
+ */
 function inverse() {
   display.value = 1 / display.value;
 }
 
+/**
+ * This displays the value e to the terminal
+ */
 function e() {
   display.value += "e";
 }
 
+/**
+ * This displays the value pi to the terminal
+ */
 function pi() {
   display.value += "π";
 }
