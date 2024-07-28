@@ -5,9 +5,12 @@ let storedValue = null;
 for (let object of btn) {
   object.addEventListener("click", function (e) {
     let btnValue = e.target.textContent;
-    if (!isNaN(btnValue) || btnValue === ".") {
+    if (display.value.length < 18 && !isNaN(btnValue) || btnValue === ".") {
       // Ensures that the button clicked is a valid number or a '.'
       display.value += btnValue;
+    } else if (display.value.length >= 18) {
+      alert("Input too long. Maximum 18 characters allowed.");
+      display.value = ""
     }
   });
 }
