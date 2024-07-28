@@ -6,6 +6,7 @@ for (let object of btn) {
   object.addEventListener("click", function (e) {
     let btnValue = e.target.textContent;
     if (!isNaN(btnValue) || btnValue === ".") {
+      // Ensures that the button clicked is a valid number or a '.'
       display.value += btnValue;
     }
   });
@@ -21,6 +22,9 @@ function equal() {
     let exp = display.value;
     let fName = "";
 
+    // Allows for computer to recognise if the display contains a specific
+    // mathematical function, then the correct one is run
+
     if (exp.includes("log(")) {
       fName = "log";
     } else if (exp.includes("sin(")) {
@@ -34,6 +38,7 @@ function equal() {
     }
 
     switch (fName) {
+      // Use of a switch-case scenario to maximise performance of the program
       case "log":
         return logCalc();
         break;
@@ -60,18 +65,30 @@ function equal() {
   }
 }
 
+/**
+ * This function comepletes division expressions
+ */
 function division() {
   display.value += "/";
 }
 
+/**
+ * This function completes multiplication expressions
+ */
 function multiply() {
   display.value += "*";
 }
 
+/**
+ * This function completes subtraction expressions
+ */
 function subtract() {
   display.value += "-";
 }
 
+/**
+ * This function completes addition expressions
+ */
 function addition() {
   display.value += "+";
 }
