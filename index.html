@@ -25,22 +25,22 @@
         </div>
         <div class="btns">
           <div class="row">
-            <button class="btn red" onclick="deleteChar()">DEL</button>
+            <button class="btn red" onclick="deleteChar()" aria-label="Delete button">DEL</button>
             <button class="btn dark-grey hide o-brace" onclick="openBrace()">
               (
             </button>
             <button class="btn dark-grey hide c-brace" onclick="closedBrace()">
               )
             </button>
-            <button class="btn grey" onclick="clearDisplay()">AC</button>
-            <button class="btn grey" onclick="plusMinus()">±</button>
-            <button class="btn grey" onclick="percent()">%</button>
+            <button class="btn grey" onclick="clearDisplay()" aria-label="Clear display">AC</button>
+            <button class="btn grey" onclick="plusMinus()" aria-label="Plus-minus button">±</button>
+            <button class="btn grey" onclick="percent()" aria-label="Percentage button">%</button>
             <button class="btn symbols" onclick="division()">÷</button>
           </div>
         </div>
         <div class="btns">
           <div class="row">
-            <button class="btn dark-grey hide x-pow-two" onclick="xPowTwo()">
+            <button class="btn dark-grey hide x-pow-two" onclick="xPowTwo()" aria-label="x-squared button">
               x²
             </button>
             <button
@@ -58,10 +58,10 @@
         </div>
         <div class="btns">
           <div class="row">
-            <button class="btn dark-grey hide x-sqrt" onclick="xSqrt()">
+            <button class="btn dark-grey hide x-sqrt" onclick="xSqrt()" aria-label="Square root of x">
               √
             </button>
-            <button class="btn dark-grey hide x-cbrt" onclick="xCbrt()">
+            <button class="btn dark-grey hide x-cbrt" onclick="xCbrt()" aria-label="Cube root of x">
               ∛
             </button>
             <button class="btn dark-grey hide ln" onclick="ln()">ln</button>
@@ -88,7 +88,7 @@
               1/x
             </button>
             <button class="btn dark-grey hide sym-e" onclick="e()">e</button>
-            <button class="btn dark-grey hide sym-pi" onclick="pi()">π</button>
+            <button class="btn dark-grey hide sym-pi" onclick="pi()" aria-label="Pi button">π</button>
             <button class="btn" id="zero">0</button>
             <button class="btn">.</button>
             <button class="btn symbols" onclick="equal()">=</button>
@@ -96,13 +96,13 @@
         </div>
         <div class="btns">
           <div class="row">
-            <button class="btn green" onclick="storeValue()">STO</button>
-            <button class="btn green" onclick="recallValue()">REC</button>
+            <button class="btn green" onclick="storeValue()" aria-label="Store value button">STO</button>
+            <button class="btn green" onclick="recallValue()" aria-label="Recall value button">REC</button>
           </div>
         </div>
         <div class="btns">
           <div class="row">
-            <button class="btn expand" onclick="changeClass()">
+            <button class="btn expand" onclick="changeClass()" aria-label="Dropdown menu for more math functions">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
