@@ -9,6 +9,7 @@ for (let object of btn) {
       // Ensures that the button clicked is a valid number or a '.'
       display.value += btnValue;
     } else if (display.value.length >= 18) {
+      // Ensures that the displays length never gets exceeded by more than 18 characters
       alert("Input too long. Maximum 18 characters allowed.");
       display.value = ""
     }
