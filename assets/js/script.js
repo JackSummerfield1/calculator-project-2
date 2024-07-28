@@ -66,34 +66,6 @@ function equal() {
 }
 
 /**
- * This function comepletes division expressions
- */
-function division() {
-  display.value += "/";
-}
-
-/**
- * This function completes multiplication expressions
- */
-function multiply() {
-  display.value += "*";
-}
-
-/**
- * This function completes subtraction expressions
- */
-function subtract() {
-  display.value += "-";
-}
-
-/**
- * This function completes addition expressions
- */
-function addition() {
-  display.value += "+";
-}
-
-/**
  * This function allows for an equation to be calculated
  * within the brackets of the log function ie. log(7+3)
  * and completes the log function, including its limitations
@@ -183,6 +155,34 @@ function lnCalc() {
   } else {
     display.value = "Error";
   }
+}
+
+/**
+ * This function comepletes division expressions
+ */
+function division() {
+  display.value += "/";
+}
+
+/**
+ * This function completes multiplication expressions
+ */
+function multiply() {
+  display.value += "*";
+}
+
+/**
+ * This function completes subtraction expressions
+ */
+function subtract() {
+  display.value += "-";
+}
+
+/**
+ * This function completes addition expressions
+ */
+function addition() {
+  display.value += "+";
 }
 
 function percent() {
