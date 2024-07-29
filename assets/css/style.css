@@ -41,6 +41,7 @@ button:hover {
   border: 2px solid white;
 }
 
+/* Styling the size and colors of the buttons */
 .btn {
   margin: 2px;
   padding: 5px;
@@ -52,6 +53,7 @@ button:hover {
   color: #ffffff;
 }
 
+/* Styling specific buttons with different colors to differentiate */
 button.btn.symbols {
   background-color: #330033;
 }
@@ -81,6 +83,7 @@ button.btn.expand {
 }
 
 /* Media query for tablets */
+/* Adjusting position of all the buttons, more responsive */
 @media only screen and (max-width: 996px) {
   button.btn.hide {
     display: none;
@@ -170,6 +173,7 @@ button.btn.expand {
 }
 
 /* Media query for mobile phones */
+/* Adjusting position of all the buttons, more responsive */
 @media only screen and (max-width: 548px) {
   h1 {
     font-size: 1em;
