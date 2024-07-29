@@ -88,13 +88,13 @@ button.btn.expand {
 
   button.btn.red {
     position: absolute;
-    top: 616px;
+    top: 588px;
   }
 
   button.btn.expand {
     display: block;
     position: absolute;
-    top: 615px;
+    top: 588px;
     margin-left: 76px;
     background-color: #333300;
   }
