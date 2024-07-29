@@ -58,7 +58,7 @@ These are fulfilled by:
 
 #### Colors
 
-![Color Palette](README-images/color-pallette-calc.png)
+![Color Palette](README-images/color-pallette.png)
 
 - I wanted the site to follow a minimal aesthetic, the colors I have used have an excellent contrast ratio to the white text, maximising the user experience.
 
