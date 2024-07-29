@@ -10,6 +10,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
+- [Features](#features)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -130,6 +131,27 @@ npm start
 
 - [ChatGPT](https://chat.openai.com/)
   - Help debug some code
+
+## Features
+
+- Feature 1:
+  ![responsive-design](README-images/1.png)
+  - I have incorporated a dropdown menu for mobile users, including all of the more scientific mathematical functions. This allows for a better user experience and lets them choose whether or not they want to access those functions
+- Feature 2:
+  ![max-characters-error](README-images/2.png)
+  - I have created an error system to help with defensive design. This stops the user from entering anything more than 18 characters and resets the screen if this occurs, along with an error message explaining what the user has done wrong.
+- Feature 3:
+  ![log-error](README-images/3.png)
+  - I have created an error system with the log function, where values less than or equal to 0 cannot be entered. As this breaks mathematical laws, hence, an error message is displayed to the user.
+- Feature 4:
+  ![e-pi-replacements](README-images/4.png)
+  - The values of e and pi have been replaced by their respective mathematical symbols to allow for a better user experience.
+- Feature 5:
+  ![sto-btn](README-images/5.png)
+  - Use of a store button so that the user can save previous values to a memory.
+- Feature 6:
+  ![rec-btn](README-images/6.png)
+  - Use of a recall button so that the user can re-use previous values they have stored to the memory.
 
 ## Testing
 
