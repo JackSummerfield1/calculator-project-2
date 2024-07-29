@@ -243,6 +243,12 @@ npm start
 
 - I also got a lot of help from online forums and [W3Schools](https://www.w3schools.com/) when trying to understand different JS techniques. Again, this has been commented and specified within my code.
 
+- Credit to [Change class name of an HTML element](https://www.shecodes.io/athena/9423-change-the-class-name-of-an-html-element-with-javascript) for assistance on changing class name when a button is clicked
+
+- Credit to W3Schools on how to use the replace method so that the true values of e and pi aren't displayed on the calculator: [https://www.w3schools.com/jsref/jsref_replace.asp](https://www.w3schools.com/jsref/jsref_replace.asp)
+
+- All attributions are also made within the code itself
+
 ### Contact
 
 Please feel free to contact me at **summerzj10@gmail.com**
