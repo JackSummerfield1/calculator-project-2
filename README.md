@@ -159,9 +159,14 @@ npm start
 
 #### Validation
 
-- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/)
+- HTML has been validated with [W3C HTML5 Validator:](https://validator.w3.org/)
+  ![Proof-of-html-validator](README-images/html-valid.png)
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- JS has been validated with [JSHint Validator](https://jshint.com/)
+  ![Proof-of-css-validator](README-images/css-valid.png)
+- JS has been validated with [JSHint Validator](https://jshint.com/), no errors shown but there are 42 warnings.
+  ![Proof-of-js-validator](README-images/jshint-valid.png)
+- Code has passed the [WAVE Accessibility Evaluation Tool:](https://wave.webaim.org/report#/https://jacksummerfield1.github.io/calculator-project-2/)
+  ![Proof-of-wave-tool](README-images/wave-web-aim-access-eval.png)
 
 #### General Testing
 
