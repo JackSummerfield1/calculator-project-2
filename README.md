@@ -1,8 +1,8 @@
 ![Sci Calc Logo](README-images/calc-logo.webp)
 
-![Responsive Design](README-images/responsive-design-webpage.png)
+![Responsive Design](README-images/responsive-design.png)
 
-![Sci Calc](https://jacksummerfield1.github.io/calculator-project-2/) is simply a scientific calculator, available to perform simple and more advanced mathematical techniques, ranging from trigonometric to logarithmic functions to squares and roots etc.
+[Sci Calc](https://jacksummerfield1.github.io/calculator-project-2/) is simply a scientific calculator, available to perform simple and more advanced mathematical techniques, ranging from trigonometric to logarithmic functions to squares and roots etc.
 
 ## Table of Contents
 
@@ -60,7 +60,7 @@ These are fulfilled by:
 
 ![Color Palette](README-images/color-pallette-calc.png)
 
-- I wanted the site to follow a minimal aesthetic, and base the colors off the Apple calculator.
+- I wanted the site to follow a minimal aesthetic, the colors I have used have an excellent contrast ratio to the white text, maximising the user experience.
 
 - The text is primarily white to contrast the bold color backgrounds
 
@@ -197,6 +197,8 @@ npm start
 
 - The calculator evaluates 1/0 as infinity, however this is mathematically incorrect. 1/0 would evaluate to undefined.
 
+- The display only recognises when 18 or more characters have been inputted through clicking the buttons, if you type more than 18 characters, it will not display an error message to the user.
+
 ### Lighthouse Statistics
 
 <table>
@@ -207,10 +209,10 @@ npm start
         <th>Link for proof (Desktop)</th>
     </tr>
     <tr>
-        <th><img src="README-images/ps-mobile-insights.png"></th>
-        <th><img src="README-images/ps-desktop-insights.png"></th>
-        <th><a href="https://pagespeed.web.dev/analysis/https-jacksummerfield1-github-io-calculator-project-2/2vbut7klnx?form_factor=mobile">Click Here</a></th>
-        <th><a href="https://pagespeed.web.dev/analysis/https-jacksummerfield1-github-io-calculator-project-2/2vbut7klnx?form_factor=desktop">Click Here</a></th>
+        <th><img src="README-images/mobile-insights.png"></th>
+        <th><img src="README-images/desktop-insights.png"></th>
+        <th><a href="https://pagespeed.web.dev/analysis/https-jacksummerfield1-github-io-calculator-project-2/ph03aepctx?form_factor=mobile">Click Here</a></th>
+        <th><a href="https://pagespeed.web.dev/analysis/https-jacksummerfield1-github-io-calculator-project-2/ph03aepctx?form_factor=desktop">Click Here</a></th>
     </tr>
 </table>
 
